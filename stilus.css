@@ -1,32 +1,13 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    
-}
-body{
-    font-family:"Quicksand", serif;
-   
-}
+@import url("kozos.css");
+
+
 .indexMain{
-    max-width: 856px;
-    width: 80%;
-    margin: auto;
-    background-color: rgb(255, 247, 176);
-    border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 nav{
     flex: 0 0 100%;
-}
-header{
-    flex: 0 0 100%;
-    color: rgb(156, 149, 86);
-    text-align: center;
-    padding: 30px;
-
 }
 img{
     width: 100%;
@@ -48,8 +29,4 @@ box-shadow: 0px 15px 20px rgba(0,0,0,0.4);
 }
 .kepek{
     flex: 0 0 calc(33.3% - 40px)
-}
-
-footer{
-    flex: 0 0 100%;
 }

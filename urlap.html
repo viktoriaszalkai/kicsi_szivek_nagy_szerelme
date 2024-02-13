@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="urlap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roszkopf Adél</title>
@@ -21,55 +24,107 @@
         <header><h1>Mondja el véleményét!</h1></header>
         <article>
             <form>
-                <div>
-                    <label for="knev">Keresztnév:</label><br>
-                    <input type="text" id="knev" name="knev">
+                <div class="adatok">
+                    <div>
+                        <label for="vnev">Vezetéknév:</label><br>
+                        <input type="text" id="vnev" name="vnev">
+                    </div>
+                    <div>
+                        <label for="knev">Keresztnév:</label><br>
+                        <input type="text" id="knev" name="knev">
+                    </div>
+                    <div>
+                        <label for="datum">Dátum:</label><br>
+                        <input type="date" id="date" name="date">
+                    </div>
                 </div>
-                <div>
-                    <label for="vnev">Vezetéknév:</label><br>
-                    <input type="text" id="vnev" name="vnev">
+                <div class="velemeny">
+                    <div class="radiobuttonFlex">
+                        <label for="tetszes">Mennyire tetszett Önnek a képregény?</label>
+                        <span>
+                            <label for="1">1</label>
+                            <input type="radio" id="1" name="tetszes">
+                            <label for="2">2</label>
+                            <input type="radio" id="2" name="tetszes">
+                            <label for="3">3</label>
+                            <input type="radio" id="3" name="tetszes">
+                            <label for="4">4</label>
+                            <input type="radio" id="4" name="tetszes">
+                            <label for="5">5</label>
+                            <input type="radio" id="5" name="tetszes">
+                        </span>
+                    </div>
+                    <div>
+                        <textarea name="message" rows="10" cols="30" placeholder="Fejtse ki válaszát pár mondatban:"></textarea>
+                    </div>
+                    <div class="radiobuttonFlex">
+                        <label for="tetszes">Mennyire tetszettek önnek a karakterek?</label>
+                        <span>
+                            <label for="1">1</label>
+                            <input type="radio" id="1" name="tetszes">
+                            <label for="2">2</label>
+                            <input type="radio" id="2" name="tetszes">
+                            <label for="3">3</label>
+                            <input type="radio" id="3" name="tetszes">
+                            <label for="4">4</label>
+                            <input type="radio" id="4" name="tetszes">
+                            <label for="5">5</label>
+                            <input type="radio" id="5" name="tetszes">
+                        </span>
+                    </div>
+                    <div>
+                        <textarea name="message" rows="10" cols="30" placeholder="Fejtse ki válaszát pár mondatban:"></textarea>
+                    </div>
+                    <div class="radiobuttonFlex">
+                        <label for="tetszes">Mennyire volt érthető a képregény?</label>
+                        <span>
+                            <label for="1">1</label>
+                            <input type="radio" id="1" name="tetszes">
+                            <label for="2">2</label>
+                            <input type="radio" id="2" name="tetszes">
+                            <label for="3">3</label>
+                            <input type="radio" id="3" name="tetszes">
+                            <label for="4">4</label>
+                            <input type="radio" id="4" name="tetszes">
+                            <label for="5">5</label>
+                            <input type="radio" id="5" name="tetszes">
+                        </span>
+                    </div>
+                    <div>
+                        <textarea name="message" rows="10" cols="30" placeholder="Fejtse ki válaszát pár mondatban:"></textarea>
+                    </div>
+                    <label class="kepkocka" for="kepkocka">Melyik képkocka/képkockák érintettek meg?</label>
+                    <div class="checkbox">
+                        <div>
+                            <input type="checkbox" id="1" name="kepkocka">
+                            <label for="1">1.</label><br>
+                            <input type="checkbox" id="2" name="kepkocka">
+                            <label for="2">2.</label><br>
+                            <input type="checkbox" id="3" name="kepkocka">
+                            <label for="3">3.</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="4" name="kepkocka">
+                            <label for="4">4.</label><br>
+                            <input type="checkbox" id="5" name="kepkocka">
+                            <label for="5">5.</label><br>
+                            <input type="checkbox" id="6" name="kepkocka">
+                            <label for="6">6.</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="7" name="kepkocka">
+                            <label for="7">7.</label><br>
+                            <input type="checkbox" id="8" name="kepkocka">
+                            <label for="8">8.</label><br>
+                            <input type="checkbox" id="9" name="kepkocka">
+                            <label for="9">9.</label><br>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label for="datum">Dátum:</label><br>
-                    <input type="date" id="date" name="date">
+                <div class="email">
+                    <label for="email">Íratkozzon fel hírlevekünkre:</label>
+                    <input class="input" type="email" id="email" name="email">
                 </div>
-                <div>
-                    <label for="tetszes">Mennyire tetszett Önnek a képregény?</label>
-                </div>
-                <div>
-                    <label for="1">1</label>
-                    <input type="radio" id="1" name="tetszes">
-                    <label for="2">2</label>
-                    <input type="radio" id="2" name="tetszes">
-                    <label for="3">3</label>
-                    <input type="radio" id="3" name="tetszes">
-                    <label for="4">4</label>
-                    <input type="radio" id="4" name="tetszes">
-                    <label for="5">5</label>
-                    <input type="radio" id="5" name="tetszes">
-                </div>
-                <div>
-                    <textarea name="message" rows="10" cols="30" placeholder="Fejtse ki válaszát pár mondatban:"></textarea>
-                </div>
-                <div>
-                    <label for="tetszes">Mennyire tetszett Önnek a képregény?</label>
-                </div>
-                <div>
-                    <label for="1">1</label>
-                    <input type="radio" id="1" name="tetszes">
-                    <label for="2">2</label>
-                    <input type="radio" id="2" name="tetszes">
-                    <label for="3">3</label>
-                    <input type="radio" id="3" name="tetszes">
-                    <label for="4">4</label>
-                    <input type="radio" id="4" name="tetszes">
-                    <label for="5">5</label>
-                    <input type="radio" id="5" name="tetszes">
-                </div>
-                <div>
-                    <textarea name="message" rows="10" cols="30" placeholder="Fejtse ki válaszát pár mondatban:"></textarea>
-                </div>
-
               </form>
         </article>
         <footer>Roszkopf Adél, Szalkai Viktória</footer>
