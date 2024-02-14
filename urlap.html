@@ -25,23 +25,23 @@
         <article>
             <form>
                 <div class="adatok">
-                    <div>
+                    <div class="adatokGyerek">
                         <label for="vnev">Vezetéknév:</label><br>
                         <input type="text" id="vnev" name="vnev">
                     </div>
-                    <div>
+                    <div class="adatokGyerek">
                         <label for="knev">Keresztnév:</label><br>
                         <input type="text" id="knev" name="knev">
                     </div>
-                    <div>
+                    <div class="adatokGyerek">
                         <label for="datum">Dátum:</label><br>
                         <input type="date" id="date" name="date">
                     </div>
                 </div>
                 <div class="velemeny">
                     <div class="radiobuttonFlex">
-                        <label for="tetszes">Mennyire tetszett Önnek a képregény?</label>
-                        <span>
+                        <label class="tetszes" for="tetszes" >Mennyire tetszett Önnek a képregény?</label>
+                        <span class="gombok">
                             <label for="1">1</label>
                             <input type="radio" id="1" name="tetszes">
                             <label for="2">2</label>
@@ -52,14 +52,15 @@
                             <input type="radio" id="4" name="tetszes">
                             <label for="5">5</label>
                             <input type="radio" id="5" name="tetszes">
+                            <br class="break">
                         </span>
                     </div>
                     <div>
                         <textarea name="message" rows="10" cols="30" placeholder="Fejtse ki válaszát pár mondatban:"></textarea>
                     </div>
                     <div class="radiobuttonFlex">
-                        <label for="tetszes">Mennyire tetszettek önnek a karakterek?</label>
-                        <span>
+                        <label class="tetszes" for="tetszes">Mennyire tetszettek önnek a karakterek?</label>
+                        <span class="gombok">
                             <label for="1">1</label>
                             <input type="radio" id="1" name="tetszes">
                             <label for="2">2</label>
@@ -70,14 +71,15 @@
                             <input type="radio" id="4" name="tetszes">
                             <label for="5">5</label>
                             <input type="radio" id="5" name="tetszes">
+                            <br class="break">
                         </span>
                     </div>
                     <div>
                         <textarea name="message" rows="10" cols="30" placeholder="Fejtse ki válaszát pár mondatban:"></textarea>
                     </div>
                     <div class="radiobuttonFlex">
-                        <label for="tetszes">Mennyire volt érthető a képregény?</label>
-                        <span>
+                        <label class="tetszes" for="tetszes">Mennyire volt érthető a képregény?</label>
+                        <span class="gombok">
                             <label for="1">1</label>
                             <input type="radio" id="1" name="tetszes">
                             <label for="2">2</label>
@@ -88,6 +90,7 @@
                             <input type="radio" id="4" name="tetszes">
                             <label for="5">5</label>
                             <input type="radio" id="5" name="tetszes">
+                            <br class="break">
                         </span>
                     </div>
                     <div>
